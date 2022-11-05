@@ -1,9 +1,9 @@
-a=input("색상 #1을 입력하시오: ")
-b=input("색상 #2을 입력하시오: ")
+a=input("색상 #1을 입력하시오: ") #7번 문제
+b=input("색상 #2을 입력하시오: ") #input함수로 색상을 받음
 c=input("색상 #3을 입력하시오: ")
 
-import turtle
-t=turtle.Turtle()
+import turtle                    #begin_fill 함수로 채우기를 시작하고 end_fill로 채우기를 끝냄
+t=turtle.Turtle()                #penup 함수는 붓을 종이에서 떼는 함수이고 pendown함수는 다시 붓을 종이에 데는 함수이다
 t.shape("turtle")
 t.fillcolor(a)
 t.begin_fill()
@@ -23,4 +23,22 @@ t.fillcolor(c)
 t.begin_fill()
 t.circle(50)
 t.end_fill()
+t._screen.exitonclick()
+
+
+x1=int(input("x1:")) #8번 문제  #int함수로 x와 y 값을 받아서 터틀그래픽으로 출력한다.
+y1=int(input("y1:"))
+x2=int(input("x2:"))
+y2=int(input("y2:"))
+x3=int(input("x3:"))
+y3=int(input("y3:"))
+       
+list=[x1,y1,x2,y2,x3,y3]
+
+import turtle
+t=turtle.Turtle()
+t.shape("turtle")
+t.goto(list[0],list[1])
+t.goto(list[2],list[3])
+t.goto(list[4],list[5])
 t._screen.exitonclick()
